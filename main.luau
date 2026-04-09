@@ -7,7 +7,7 @@ if not success then
 end
 
 local function getLucideIcon(name: string): (string, Vector2, Vector2)
-    local icon: {}? = LucideIcons[name] -- {image_id, {irs.x, irs.y}, {iro.x, iro.y}} or nil
+    local icon: {}? = LucideIcons['48px'][name] -- {image_id, {irs.x, irs.y}, {iro.x, iro.y}} or nil
     if not icon then
         error(string.format("Icon %s not found.", name))
     end
